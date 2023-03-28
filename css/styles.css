@@ -1,0 +1,42 @@
+body {
+  font-size: 16px;
+  color: #0f0f0f;
+  background-color: lightblue;
+  font-family: 'Oxygen', sans-serif;
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+
+.navbar {
+  background: white;
+}
+
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+}
+
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 10px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+
+#cards {
+  margin: 0px auto;
+  padding: 10px 0px;
+}
+#cards .card-header {
+  background-color: darkslategrey;
+  color: floralwhite;
+}
+
+#cards .card-body {
+  background-color: floralwhite;  
+}

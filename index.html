@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  <!-- bootstrap 5.0.1 via jsdelivr -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' type='text/css'>
+
+  <title>Kenny's Stuff</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/guardant_logo.png" height="35" width="145"> Kenny's Stuff</a>
+      <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="jumbotron">
+    <div class="container">
+      <div class="row row-header">
+        <div class="col-12">
+          <h1>Cluster Queue Status</h1>
+          <p>Quick look at the cluster stats.</p>
+        </div>
+        <div class="btn-group col-md-9 col-lg-6" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="btnradio1">Summary</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio2">Jobs</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio3">Storage</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio4">Other</label>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row row-content">
+        <div class="col" id="queueStatus">
+          <!-- insert content here -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row row-content" id="cards">
+        <h1>Notes / Tips</h1>
+          <div class="col-md-6">
+            <div class="card">
+              <h4 class="card-header">how to share html/files from your home dir</h4>
+              <div class="card-body">
+                <ol>
+                  <li>login to an hpc node with access to your home dir</li>
+                  <li>mkdir public_html</li>
+                  <li>place any files you want exposed in public_html</li>
+                </ol>
+                <p>share the url: https://bifs.ghdna.io/~username/file.html</p>
+              </div>
+            </div> <!-- card -->
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <h4 class="card-header">use html/css/js</h4>
+              <div class="card-body">
+                <p>you can use all the standard technologies you're used to<p>
+              </div>
+            </div> <!-- card -->
+          </div>
+    </div>
+  </div>
+
+  <!-- bootstrap js via jsdelivr -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--   <script src="node_modules/requirejs/require.js"></script> --> 
+  <script src="js/scripts.js"></script>
+</body>
+</html> 
