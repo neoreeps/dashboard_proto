@@ -12,6 +12,11 @@ html based site.
 ## browser-sync
 This is a great tool for monitoring your changes live as you develop.  It will "watch" a directory and auto refresh a browser window running your code.
 
+To install, simply use node package manager (npm):
+```
+npm install -g browser-sync
+```
+
 It has many optons but this is the simple command i use.
 ```
 browser-sync start --server --directory --files “*” --watch
